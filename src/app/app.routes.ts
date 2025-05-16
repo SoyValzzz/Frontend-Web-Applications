@@ -15,7 +15,8 @@ export const routes: Routes = [
   { path: 'reports', component: ReportsComponent },
   { path: 'sustainableActions', loadComponent: SustenaibleActionsComponent, title: 'Sustenaible Actions' },
 
-  { path: '', component: PageNotFoundComponent },
+{ path: '', redirectTo: 'home', pathMatch: 'full' }
+
 
 
 ];
